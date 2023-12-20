@@ -1,21 +1,31 @@
 import About from "@/components/about";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
+import AboutB from "@/components/aboutb";
 
-export default function Home() {
+import Intro from "@/components/intro";
+
+import SectionDivider from "@/components/section-divider";
+
+ // replace with the actual path to your image
+
+
+ export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
+      <div style={{
+        backgroundImage: `url(/camp.png)`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        height: '100vh'
+      }}>
+        <Intro />
+        <SectionDivider />
+      </div>
       <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+      <AboutB />
+     
     </main>
   );
 }
+
